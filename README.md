@@ -3,7 +3,7 @@ When you want to quickly prototype API models in GraphQL SDL.
 Sort of like graphqleditor.com,
 but where the SDL files are on your local machine, where you're using your favorite IDE
 (not a clunkly SPA web page) to edit/modify GQL Schema SDL files and GraphiQL to navigate
-reponse types and argumentation.
+reponse types and argumentation in real time as you edit them.
 
 # Configure
 You'll need `jq`, a CLI tool for dealing with JSON files.
