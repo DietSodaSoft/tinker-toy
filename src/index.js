@@ -18,12 +18,10 @@ loadSchema(glob, {
         mocks: true, });
 
       return server.listen( { port: serverPort })
-}).then(() => {
+}).then(info => {
   console.log(`
     🚀  Server is running!
-        Schema from ${glob}
-    🔉  Listening on port ${serverPort}
-    📭  Query at https://studio.apollographql.com/dev
+    📭  Schema from ${glob}
+    🔉  Listening at ${info.url}
   `);
 })
-
