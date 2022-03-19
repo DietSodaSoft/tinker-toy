@@ -18,7 +18,7 @@ const config = {
 module.exports = config;
 ```
 
-#Use
+# Use
 Fire up the nanobots.
 
 ### Install Dependencies
