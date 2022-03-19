@@ -12,7 +12,7 @@ The SDL files can be anywhere on the host machine; they do not need
 to be in this project.
 ```js
 const config = {
-    schemaRootFolder: '/Users/wendelschultz/development/pattern/predict/iserve/scratch'
+    schemaRootFolder: '/Users/you/projects/super-secret/schema'
 };
 
 module.exports = config;
