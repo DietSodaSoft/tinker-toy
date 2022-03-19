@@ -13,8 +13,11 @@ This will recursively include all `.graphqls` files.
 
 The SDL files can be anywhere on the host machine; they do not need
 to be in this project.
+
+Default server port is `4002`.  Set it here if other things need that port.
 ```json
 {
+    "serverPort": 4321,
     "schemaRootFolder": "/Users/you/projects/super-secret/schema"
 }
 ```
