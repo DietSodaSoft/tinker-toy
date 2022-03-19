@@ -32,7 +32,7 @@ Fire up the nanobots.
 `$ yarn start`
 
 ### Use GraphiQL (GQL Schema Browser)
-Use any GQL schema browser to inspect the API models at `http://localhost:4000`. I recommend [GraphiQL](https://www.electronjs.org/apps/graphiql).
+Use any GQL schema browser to inspect the API models at `http://localhost:4002`. I recommend [GraphiQL](https://www.electronjs.org/apps/graphiql).
 * Using GraphiQL, MacOS didn't trust the developer. I had to go to Finder, right click on GraphiQL, click 'Open', then trust it. 
 * From there it wasn't an issue
 
