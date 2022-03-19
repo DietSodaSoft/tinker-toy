@@ -6,6 +6,7 @@ const { GraphQLFileLoader } = require('@graphql-tools/graphql-file-loader')
 let rawconfig = fs.readFileSync('schema-config.json');
 const config = JSON.parse(rawconfig);
 
+const serverPort = config["serverPort"] || 4000;
 const glob = config["schemaRootFolder"] + '/**/*.graphqls';
 console.log("Looking for GQL Schema: " + glob);
 
@@ -16,12 +17,12 @@ loadSchema(glob, {
         schema,
         mocks: true, });
 
-      return server.listen()
+      return server.listen( { port: serverPort })
 }).then(() => {
   console.log(`
     🚀  Server is running!
         Schema from ${glob}
-    🔉  Listening on port 4000
+    🔉  Listening on port ${serverPort}
     📭  Query at https://studio.apollographql.com/dev
   `);
 })
