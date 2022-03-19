@@ -4,7 +4,7 @@
   "description": "A little app to Tinker with Schema",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index"
+    "start": "jq .schemaRootFolder schema-config.json| xargs -I {} nodemon -e js,mjs,json,graphqls,gql --watch . --watch {} src/index"
   },
   "dependencies": {
     "@graphql-tools/graphql-file-loader": "^7.3.5",

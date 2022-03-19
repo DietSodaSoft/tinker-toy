@@ -5,17 +5,17 @@ but where the SDL files are on your local machine, where you're using your favor
 (not a clunkly SPA web page) to edit/modify GQL Schema SDL files.
 
 # Configure
-Configure the folder where the SDL files are located in `schema-config.js`.
+You'll need `jq`, a CLI tool for dealing with JSON files.
+
+Configure the folder where the SDL files are located in `schema-config.json`.
 This will recursively include all `.graphqls` files.
 
 The SDL files can be anywhere on the host machine; they do not need
 to be in this project.
-```js
-const config = {
-    schemaRootFolder: '/Users/you/projects/super-secret/schema'
-};
-
-module.exports = config;
+```json
+{
+    "schemaRootFolder": "/Users/you/projects/super-secret/schema"
+}
 ```
 
 # Use
